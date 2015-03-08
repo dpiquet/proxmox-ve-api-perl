@@ -19,7 +19,7 @@ use Net::Proxmox::VE::Cluster;
 use Net::Proxmox::VE::Nodes;
 
 
-our $VERSION = 0.006;
+our $VERSION = 0.007;
 
 =encoding utf8
 
