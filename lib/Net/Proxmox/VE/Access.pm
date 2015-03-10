@@ -6,6 +6,16 @@ use strict;
 use warnings;
 use base 'Exporter';
 
+#force lwp to use tls
+use IO::Socket::SSL;
+my $context = new IO::Socket::SSL::SSL_Context(
+    SSL_version => 'tlsv1',
+    SSL_verify_mode => Net::SSLeay::VERIFY_NONE(),
+);
+
+IO::Socket::SSL::set_default_context($context);
+
+
 use LWP::UserAgent;
 use JSON qw(decode_json);
 

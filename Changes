@@ -1,5 +1,8 @@
 Revision history for perl Net::Proxmox::VE
 
+0.008 2015-03-10
+- Fixed ssl handshake failure under debian squeeze by forcing the use of tlsv1 (dpiquet)
+
 0.007 2015-03-08
 - Fixed certification verification issue (https://github.com/dpiquet/pve-monitor/issues/16) (dpiquet)
 
